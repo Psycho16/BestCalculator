@@ -1,18 +1,25 @@
 body {
   box-sizing: border-box;
   font-family: monospace;
+  margin: 0;
 }
 .header {
   display: flex;
+  background-color: #0020d89c;
+  height: 100px;
+  color: #ffffff;
+  font-size: 30px;
 }
 .header-title {
+  margin-top: 0;
   margin: auto;
+  /* background-color: #0020d89c; */
 }
 
 .main {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: ; */
 }
 .time-section {
   width: 200px;
@@ -21,13 +28,16 @@ body {
   /* border: 1px solid black; */
   display: flex;
   flex-direction: column;
-  /* justify-content: flex-end; */
-  margin-left: 70%;
+  /* margin-left: 50%; */
+  margin: auto;
   margin-bottom: 20px;
+  font-size: 25px;
   /* color: green; */
 }
 .current-time, .current-date {
   font-size: xx-large;
+  color: #000000;
+  /* font-size: 25px; */
 }
 .calc-section {
   display: flex;
@@ -39,12 +49,12 @@ body {
 }
 .calc-input {
   height: 20%;
-    /* color:  #a09999; */
-    padding-left: 10px;
-    padding-right: 10px;
-    font-size: 28px;
-    text-align: left;
-    height: 50px;
+  background-color:  #ffffff;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 28px;
+  text-align: left;
+  height: 50px;
 }
 .calc-buttons {
   height: 100%;
@@ -53,9 +63,9 @@ body {
   grid-template-rows: 20% 20% 20% 20% 20%;
 }
 .calc-button {
-  background-color: #0113779c;
+  background-color: #0020d89c;
   color: #ffffff;
-  font-size: 15px;
+  font-size: 25px;
   font-family: monospace;
   border: 1px solid #ffffffc2;
 }
