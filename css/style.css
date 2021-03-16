@@ -4,15 +4,25 @@ body {
   margin: 0;
 }
 .header {
+  flex-direction: row;
   display: flex;
+  align-items: center;
+  justify-content: space-around;
   background-color: #0020d89c;
   height: 100px;
   color: #ffffff;
-  font-size: 30px;
+  /* font-size: 30px; */
+}
+.header-link {
+  color: #ffffff;
+  /* margin-top: auto; */
+  text-decoration: none;
+  font-size: 25px;
 }
 .header-title {
-  margin-top: 0;
-  margin: auto;
+  /* margin-top: auto; */
+  font-size: 35px;
+  /* margin: auto; */
   /* background-color: #0020d89c; */
 }
 
@@ -55,6 +65,9 @@ body {
   font-size: 28px;
   text-align: left;
   height: 50px;
+  border: 1px solid #3f3f3f;
+  border-bottom: none;
+  outline: none;
 }
 .calc-buttons {
   height: 100%;
@@ -63,9 +76,43 @@ body {
   grid-template-rows: 20% 20% 20% 20% 20%;
 }
 .calc-button {
-  background-color: #0020d89c;
+  background-color: #807e7e;
   color: #ffffff;
   font-size: 25px;
   font-family: monospace;
   border: 1px solid #ffffffc2;
+}
+.calc-button:focus {
+  outline: none;
+  border: 5px solid #a7a4a4;
+}
+.clear-button {
+  background-color: #ff0000;
+}
+.clear-button:focus {
+  border: 5px solid #eb0101;
+}
+.color-button__right {
+  background-color: #1eff00;
+}
+.color-button__right:focus {
+  border: 5px solid #1adb00;
+}
+.color-button__left{
+  background-color: #0020d89c;
+}
+.color-button__left:focus {
+  border: 5px solid #0127ff9c;
+}
+.sign-button {
+  background-color: #ff5e00;
+}
+.sign-button:focus {
+  border: 5px solid #e45300;
+}
+.remove-button {
+  background-color: #ff3636;
+}
+.remove-button:focus {
+  border: 5px solid #ff2525;
 }
